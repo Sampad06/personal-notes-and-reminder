@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Notes &amp; Reminder"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note title"
+            android:inputType="textCapSentences"
+            android:padding="14dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etNote"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Write your note here..."
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Reminder Date"/>
+
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Reminder Time"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Note &amp; Reminder"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tvNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saved Notes"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/notesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+</ScrollView>
